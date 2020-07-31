@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PortfolioFaVenegas</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/styleP.css">
+</head>
+
+<body>
+
+
+	<div class="menu">
+		<a id="me" href=""> Me</a>
+		<a  id="pro" href=""> Proyectos</a>
+		<a id="co" href=""> Contacto</a>
+
+
+		
+	</div>
+	
+
+	<section class="board">
+		
+		<header>
+
+			<h1 id="ti">Fatima</h1>
+			<!--<h2>Programadora</h2><br>-->
+			
+		</header><br>
+		<div class="content">
+        <div class="slider-wrapper">
+          
+          <div class="slider">
+              <div  id="t1" class="slider-text1">Programadora</div>
+              <div  id="t2" class="slider-text2">FullStack</div>
+              <div  id="t3" class="slider-text3">Web Developer</div>
+
+          </div>
+        </div>       
+      </div>
+
+	</section>
+
+	<div class="botones">
+		<button  id="img" class="verde"></button>
+	    <button id="gra" class="gradiente"></button>
+
+	</div>
+		
+</body>
+
+<script type="text/javascript">
+	
+	document.getElementById("gra").onclick = function(event) { 
+		
+	document.body.style.background="#F25F5C";
+	document.getElementById("ti").style.color="white";
+	document.getElementById("t1").style.backgroundColor="#DD614A";
+	document.getElementById("t2").style.backgroundColor="#F48668";
+	document.getElementById("t3").style.backgroundColor="#F4A698";
+	document.getElementById("me").style.color="white";
+	document.getElementById("pro").style.color="white";
+	document.getElementById("co").style.color="white";
+
+		
+	}
+
+	document.getElementById("img").onclick = function(event){
+		document.body.style.background='url(img/mi.jpg)';
+		document.body.style.backgroundSize='cover';
+		document.getElementById("t1").style.backgroundColor="black";
+	    document.getElementById("t2").style.backgroundColor="black";
+	    document.getElementById("t3").style.backgroundColor="black";
+		document.getElementById("ti").style.color="black";
+	    document.getElementById("ti").style.fontWeight="bold";
+	    document.getElementById("me").style.color="black";
+	   	document.getElementById("pro").style.color="black";
+	   	document.getElementById("co").style.color="black";
+
+
+
+
+
+
+	}
+
+
+</script>
+
+
+
+
+</html>
