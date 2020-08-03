@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+   
+font-family: 'Palanquin', sans-serif;
+	margin:0;
+	
+}
+
+.header{
+	text-align: center;
+	padding: 32px;
+}
+
+p{
+	font-size: 18px;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+.column{
+	flex:25%;
+	max-width: 25%;
+	padding: 0 4px;
+}
+
+.column img{
+	margin-top: 8px;
+	vertical-align: middle;
+}
+
+.column img:hover{
+	filter: drop-shadow(8px 8px 10px gray);
+	/*
+	 -webkit-filter: blur(5px); 
+  filter: blur(5px);*/
+}
+@media (max-width: 800px){
+
+	.column{
+		flex:50%;
+		max-width: 50%;
+	}
+
+}
+
+
+@media (max-width: 600px){
+
+	.column{
+		flex:100%;
+		max-width: 100%;
+	}
+
+}
+
+
+

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Bootstrap</title>
+	<!--animaciones con AOS-->
+	 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+	 <!--Bootstrap-->
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	 <!--Scrooll-->
+	 <script src="https://unpkg.com/scrollreveal"></script>
+
+	 <!--CSS EXTERNO -->
+	 <link rel="stylesheet" type="text/css" href="../css/styloB.css">
+</head>
+<body>
+
+
+
+ <!--Navegacion-->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+ 	<div class="container">
+  <a class="navbar-brand" href="#">Bootstrap Web</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#testimonial">Otros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">Lorem</a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+</nav>
+
+<!--HEADER -->
+
+<header id="home">
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="home-content-left">
+					<img src="../img/tazon.jpg" alt="" style="width: 70%">
+					
+				</div>
+				
+			</div>
+			<div class="col-md-6">
+				<div class="home-content-right">
+					<h1 class="display-4" >Lorem ipsum dolor sit amet. </h1>
+					<p class="mt-5"><b>Esta Web esta creada con el Framework Bootstrap junto con HTML,CSS y algunas animaciones exteriores.
+					Si quieres regresar oprime el boton de abajo.</b>
+					The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English </p>
+				<a href="../PrincipalB.html"  class="btn btn-outline-secondary btn-lg header-btn">Regresar</a>
+					
+				</div>
+				
+			</div>
+
+
+
+			
+		</div>
+		
+	</div>
+	
+</header>
+
+<!-- TESTIMONIAL-->
+<section id="testimonial">
+	<div class="container">
+		<p  class="h3 mb-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
+		<p class="h4">--Fa </p>
+		
+	</div>
+	
+</section>
+
+<!--ABOUT ME -->
+<section id="about">
+	<div class="container">
+		<div class="row mt-5">
+			<div class="col-md-6">
+				<div class="info-left">
+					<img src="../img/cup.jpg" style="width: 70%;">
+					
+				</div>
+				
+			</div>
+			<div class="col-md-6 my-auto">
+				<div class="info-right">
+					<h2>Lorem ipsum dolor sit amet.</h2>
+					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+					<a href="#" class="btn btn-outline-secondary btn-lg">Read More</a>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</section>
+
+<!--ABOUT ME 2-->
+<section id="about2">
+	<div class="container">
+		<div class="row my-5">
+			<div class="col-md-6 my-auto">
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+				
+			</div>
+			<div class="col-md-6">
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</section>
+
+<!--Footer-->
+<footer id="footer">
+	<div class="container  ">
+		<div class="row ">
+			<div class="col-md-6  ">
+				<div class="left-info-foter d-flex flex-row-reverse  mt-5">
+				
+					<button class="btn btn-info p-2 " style="background: #A09EBB; border: solid #A09EBB; border-radius: 50%"></button>
+				
+			</div>
+
+			</div>
+			<div class="col-md-6 ">
+				<div class="info-right-footer">
+				<img src="../img/milk.jpg" style="width: 28%" >
+			</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>	
+</footer>
+
+
+
+<!--Script animaciones-->
+<script type="text/javascript">
+	
+	window.sr= ScrollReveal();
+	sr.reveal('.navbar',{
+		duration: 2000,
+		origin: 'bottom'
+	});
+
+	sr.reveal('.home-content-left',{
+		duration: 2000,
+		origin: 'top',
+		distance:'300px'
+	});
+	sr.reveal('.home-content-right',{
+		duration: 2000,
+		origin: 'right',
+		distance: '300px'
+	});
+	sr.reveal('.header-btn',{
+		duration: 2000,
+		origin: 'right',
+		distance:'300px',
+		delay: 1000
+	});
+	sr.reveal('#testimonial',{
+		duration: 3000,
+		origin: 'left',
+		distance:'300px',
+		viewFactor:0.2
+	});
+
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+</script>
+
+
+<!--Script de bootstrap-->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!--Script de AOS-->
+
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+
+</html>

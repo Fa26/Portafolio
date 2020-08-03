@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
-
+*{
+    margin:0;
+  padding: 0;
+}
 body{
-	margin:0;
-	padding: 0;
+	
 	background-color:black;
 
 
@@ -107,7 +109,7 @@ body{
 .menu a{
 	position: relative;
 	margin-left: 40px;
-	top:40px;
+	top:0px;
     font-family: 'Montserrat', sans-serif;
 	color: white;
 	text-decoration: none;
@@ -161,14 +163,56 @@ body{
 
 
 
+.sidenav{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #001011;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
 
 
+.sidenav a{
+  font-family: 'Montserrat', sans-serif;
+   padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #FFFFFA;
+  display: block;
+  transition: 0.3s;
+}
 
 
+  .sidenav a:hover{
+     color: #f1f1f1;
+
+  }
 
 
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 
 
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+#container {
+  transition: margin-left .5s;
+  padding: 16px;
+}
 
 
 
