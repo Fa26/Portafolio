@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+  </head>
+  <body>
+
+    <nav class="navbar is-transparent has-shadow">
+      <div class="navbar-brand">
+        <a  class="navbar-item" href="#">
+        <img src="./img/chocolate.jpg" width="50" height="50" style="max-height: 70px;" class="py-2 px-2">    
+        </a>  
+
+        <div class="navbar-burger burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+          
+        </div>
+
+      </div>
+
+      <div class="navbar-menu" id="nav-links">
+        <div class="navbar-end">
+          <a class="navbar-item" href="">Home</a>
+          <a class="navbar-item" href="">More</a>          
+        </div>
+        
+      </div>
+      
+    </nav>
+
+    <!--breadcrubms-->
+    <div class="section pt-4 pb-0">
+      <div class="breadcrumb has-arrow-separator">
+        <ul class="container">
+          <li><a class="has-text-grey">Coffe</a></li>
+          <li><a class="has-text-grey">Bread</a></li>
+          <li class="is-active"><a>Cake</a></li>
+        </ul>
+        
+      </div>      
+    </div>
+
+    <!--product info-->
+    <section class="section">
+      <div class="container">
+        <div class="columns is-vcentered is-multiline">
+          <div class="column is-6-tablet is-3-desktop">
+            <h1 class="is-size-3-mobile is-size-1-desktop title" id="donuts">Donuts</h1>
+            <h2 class="is-size-3-mobile is-size-2-desktop subtitle">Colors Donuts</h2>
+            <p><strong>Esta pagina esta creada con BULMA</strong> ipsum dolor sit amet consectetur adipisicing elit. Fugit distinctio repellat voluptate qui quidem quae id, odit animi dolorum doloribus!</p>
+          </div>
+        <div class="column is-6-tablet is-5-desktop has-text-centered">
+          <img src="img/donuts.jpg" alt="donuts" class="px-6">
+        </div>
+        <div class="column is-12-tablet is-4-desktop">
+          <div class="is-size-4 mb-4">$20.00</div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, earum?</p>  
+              <form >
+                <div class="field">
+                  <div class="control mt-4 mb-4">
+                    <div class="select is-dark">
+                      <select>
+                        <option>Small (20g)</option>
+                        <option>Large (500g)</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </form> 
+              <button class="button is-primary">Add to cart</button>       
+        </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns is-8 is-variable">
+          <div class="column is-7-tablet">
+            <!--tabbed content-->
+            <div class="tabs is-boxed">
+              <ul>
+                <li class="is-active" data-target="product-details">
+                  <a>Product Details</a>
+
+                </li>
+                <li data-target="delivery-information">
+                  <a>
+                    Delivery Information
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="px-2" id="tab-content">
+              <div class="product-details">
+                <h3 class="is-size-5 title">Product Details</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorum tempora officia. Commodi, quae quidem. Delectus, nisi molestiae? Doloremque, a.
+                </p>
+              </div>
+              <div id="delivery-information" class="is-hidden" >
+                <h3 class="is-size-5 title">Delivery Information</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quasi esse exercitationem illum illo odio reiciendis ab maiores nihil mollitia?</p>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="column is-5-tablet">
+            <article class="message is-dark ">
+              <div class="message-body ">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic ab odit, natus ea ullam amet rerum. Eum repellendus itaque amet, dolorem architecto voluptatibus culpa, sint, mollitia obcaecati ab officiis maxime!</p>
+                <div class="has-text-centered">
+                <button class="button mt-5 " id="sing">Sing in</button>
+                </div>
+              </div>
+
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--cards-->
+    <section class="section">
+      <div class="container">
+        <h3 class="title has-text-centered is-size-4">Related Products</h3>
+        <div class="columns mt-5 is-8 is-variable is-centered">
+          <div class="column is-4-tablet is-3-desktop">
+         
+            <div class="card">
+              <div class="card-image has-text-centered px-6">
+                <img src="./img/pay.jpg" alt="product1">
+              </div>
+              <div class="card-content">
+                <p>$12.90</p>
+                <p class="title is-size-5">Pay</p>
+              </div>
+              
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                <a href="" class="has-text-grey">View</a>
+                </p>
+
+              </footer>
+            </div>
+          
+        </div>
+
+        <div class="column is-4-tablet is-3-desktop">
+          <div class="card">
+            <div class="card-image has-text-centered px-6">
+              <img src="./img/mochi.jpg" alt="product1">
+            </div>
+            <div class="card-content">
+              <p>$12.90</p>
+              <p class="title is-size-5">Mochi</p>
+            </div>
+            
+            <footer class="card-footer">
+              <p class="card-footer-item">
+              <a href="" class="has-text-grey">View</a>
+              </p>
+
+            </footer>
+          </div>
+
+          
+
+        </div>
+
+        <div class="column is-4tablet is-3 desktop">
+          <div class="card">
+            <div class="card-image has-text-centered px-6">
+              <img src="./img/ce.jpg" alt="product1">
+            </div>
+            <div class="card-content">
+              <p>$12.90</p>
+              <p class="title is-size-5">Cereal</p>
+            </div>
+            
+            <footer class="card-footer">
+              <p class="card-footer-item">
+              <a href="" class="has-text-grey">View</a>
+              </p>
+
+            </footer>
+          </div>
+
+        </div>
+     
+     
+        </div>
+      </div>
+
+    </section>
+
+    <!--Modal-->
+    <div class="modal">
+      <div class="modal-background"></div>
+        <div class="modal-content has-background-white py-5 px-5">
+          <h3 class="title mb-6">Taste it!</h3>
+          <form>
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control">
+                <input type="text" class="input is-primary" placeholder="Name">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control">
+                <input type="text" class="input is-primary" placeholder="Email">
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <label  class="checkbox">
+                  <input type="checkbox">
+                  I agree to the <a href="">terms & conditions</a>
+                </label>
+              </div>
+            </div>
+            <div class="mt-6 has-text-centered">
+              <button class="button is-info">Sign up</button>
+            </div>
+          </form>
+
+        
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>Copyright 2020 CoffeSuculent</p>
+      </div>
+    </footer>
+
+
+
+  </body>
+  <script>
+    ScrollReveal().reveal('#donuts',{delay:500});
+
+  </script>
+
+  <script type="text/javascript" src="index.js"></script>
+</html>
