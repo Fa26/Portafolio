@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,131 +5,120 @@
 	<title>PortfolioFaVenegas</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/styleP.css">
+	<!-- Fa Icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+<style>
+	 /* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body, html {
+  height: 100%
+}
+
+.bgimg {
+  /* Background image */
+  background-image: url('./img/img2.jpg');
+  /* Full-screen */
+  height: 100%;
+  /* Center the background image */
+  background-position: center;
+  /* Scale and zoom in the image */
+  background-size: cover;
+  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+  position: relative;
+  /* Add a white text color to all elements inside the .bgimg container */
+  color:rgb(241, 151, 16);
+  /* Add a font */
+  font-family: "Courier New", Courier, monospace;
+  /* Set the font-size to 25 pixels */
+  font-size: 25px;
+
+
+}
+
+/* Position text in the top-left corner */
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+/* Position text in the bottom-left corner */
+.bottomleft p a{
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  color:rgb(241, 151, 16);
+  text-decoration: none;
+}
+
+/* Position text in the middle */
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(153, 194, 218, 0.459);
+  backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+
+
+}
+
+/* Style the <hr> element */
+hr {
+  margin: auto;
+  width: 40%;
+} 
+</style>
+
 <body>
-
-
-<!-- submenu-lateral de la pagina principal-->
-
-	<div  id="mySidenav" class="sidenav">
-		 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			  <a href="bootstrap/PrincipalB.html">Paginas Web</a>
-			  <a href="#">Web App</a>
-			  <a href="#">Juegos</a>  
-			  <a href="#">Otros</a>	
-	</div>
-	
-<!--comienza la pagina -->
-<div id="container">
-
-<!--menu de la pagina-->
-	<div class="menu" >
-		<a id="me" href=""> Me</a>
-		<a  id="pro" href="#" onclick="openNav()"> Proyectos</a>
-		<a id="co" href=""> Contacto</a>
-
-
-		
-	</div>
-
-	<section class="board">
-		
-		<header>
-
-			<h1 id="ti">Fatima</h1>
-			<!--<h2>Programadora</h2><br>-->
-			
-		</header><br>
-		<div class="content">
-        <div class="slider-wrapper">
-          
-          <div class="slider">
-              <div  id="t1" class="slider-text1">Programadora</div>
-              <div  id="t2" class="slider-text2">FullStack</div>
-              <div  id="t3" class="slider-text3">Web Developer</div>
-
-          </div>
-        </div>       
-      </div>
-
-	</section>
-
-	<div class="botones">
-		<button  id="img" class="verde"></button>
-	    <button id="gra" class="gradiente"></button>
-
-	</div>
-</div>
-		
-</body>
+	<div class="bgimg">
+		<div class="topleft">
+		  <p>CreativeJuice</p>
+		</div>
+		<!--Middle text-->
+		<div class="middle " >
+		  <h1>COMING SOON</h1>
+		  <hr>
+		  <p id="demo" style="font-size:30px; font-weight: 500;"></p>
+		</div>
+		<!----LInk a new portfolio-->
+		<div class="bottomleft ">
+		  <p><a href="#">My new PortFolio 2.0</a></p>
+		</div>
+	  </div> 
+</body>	
 
 <script type="text/javascript">
-	
-	document.getElementById("gra").onclick = function(event) { 
-		
-	document.body.style.background='url(img/papel.jpg)';
-	document.body.style.backgroundSize='cover';
-	document.getElementById("ti").style.color="black";
-    document.getElementById("ti").style.fontWeight="bold";
-    document.getElementById("ti").style.fontStyle='italic';
+	// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
 
-	document.getElementById("me").style.color="black";
-	document.getElementById("pro").style.color="black";
-	document.getElementById("co").style.color="black";
+// Update the count down every 1 second
+var x = setInterval(function() {
 
-		
-	}
+  // Get todays date and time
+  var now = new Date().getTime();
 
-	document.getElementById("img").onclick = function(event){
-		document.body.style.background='url(img/pincel.jpg)';
-		document.body.style.backgroundSize='cover';
-		document.getElementById("t1").style.backgroundColor="black";
-	    document.getElementById("t2").style.backgroundColor="black";
-	    document.getElementById("t3").style.backgroundColor="black";
-		document.getElementById("ti").style.color="black";
-	    document.getElementById("ti").style.fontWeight="bold";
-	    document.getElementById("ti").style.fontStyle='normal';
-	    document.getElementById("me").style.color="black";
-	   	document.getElementById("pro").style.color="black";
-	   	document.getElementById("co").style.color="black";
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
 
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+  // Display the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
 
-
-
-
-	}
-
-/*FUnciones del menu*/
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("container").style.marginLeft = "250px";
-  document.body.style.background = "url(img/pintura.jpg)";
-  document.body.style.backgroundSize='cover';
-  document.getElementById("ti").style.color="#FF6B6B";
-  document.getElementById("me").style.color="#FF6B6B";
-  document.getElementById("pro").style.color="#FF6B6B";
-  document.getElementById("co").style.color="#FF6B6B";
-
-
-
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("container").style.marginLeft= "0";
-    document.body.style.background = "black";
-    document.getElementById("me").style.color="white";
-	document.getElementById("pro").style.color="white";
-	document.getElementById("co").style.color="white";
-    document.getElementById("ti").style.color="white";
-
-}
-
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000); 
 </script>
-
-
-
-
 </html>
